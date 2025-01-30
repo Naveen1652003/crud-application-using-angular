@@ -1,0 +1,97 @@
+CRUD Operation using .net readymade flow.
+
+Step 1:
+
+create database and create  a table name then id should be primary key the find the primarykey location and auto increament path.. find click property button.
+
+
+then after go c# editor right side click web.api then click appsetting have click configure the db name,password,localhost name....
+
+
+step2:
+
+Entity class.
+
+Create a entity using getter and setter method ..
+
+
+step3:
+
+DB CONTEXT:
+
+connection between the entity and database fieldname. matching the field [just connection..]
+
+
+step 4:
+
+IRespository class ===>I represents interface
+
+just a interface classname extends Igeneric class<Entity class>   ==>pass the entity class..
+
+step 5:
+
+Respository class
+
+class classname:genericrespository<entity class>,call Irespository class..
+
+and in a class having one constructor have:base(context)..
+
+
+
+step 6:
+
+have a Iservice ==>>create class name  
+
+Iservice have a method declaration ...
+
+
+
+step 7:
+
+service class just have method ,class name,linq query,pre defined method have  
+
+crud  operation query ...
+
+
+
+step 8:
+
+
+context just like a class name:controller base
+
+having a  just a response ..
+
+
+
+step 9:
+
+service request 
+
+
+just like a get,set method..
+
+
+step 10:
+
+
+mapping 
+
+
+servicerequest,entity class link .. pre defined method having ...
+
+
+
+step 11:
+
+
+register service 
+
+
+builder.service.AddTra====   pre defined method 
+
+
+<Irespository,respository>
+
+<Iservice,service>  just like a link..
+
+
